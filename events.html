@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | WolfPack Sustainability Organization</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="overlay">
+    <h1>WolfPack Sustainability Organization</h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <!-- Upcoming Events Section -->
+  <section class="calendar" data-aos="fade-up">
+    <h2>Upcoming Events</h2>
+    <p>Our first cleanup event of the new semester is scheduled for mid to late January.</p>
+  </section>
+
+  <!-- Past Events Section -->
+  <section class="past-events-section" data-aos="fade-up" data-aos-delay="150">
+    <h2>Past Events</h2>
+    
+    <!-- First Past Event -->
+    <div class="past-event-item">
+      <div class="past-events-text">
+        <p>Volunteer Cleanup at The Beaver Creek on Sullivan St. on November 9th, 2025!</p>
+      </div>
+      
+      <div class="past-events-image-wrapper">
+        <img src="pastevent.jpg" alt="Volunteer cleanup at Beaver Creek" class="past-events-image" />
+      </div>
+    </div>
+
+    <!-- Second Past Event -->
+    <div class="past-event-item">
+      <div class="past-events-text">
+        <p>Volunteer Cleanup in a forest area on Centennial Campus on October 5th, 2025!</p>
+      </div>
+      
+      <div class="past-events-image-wrapper">
+        <img src="pastevent2.jpg" alt="Volunteer cleanup on Centennial Campus" class="past-events-image" />
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-aos="fade-in" data-aos-delay="300">
+  <p>&copy; 2025 WolfPack Sustainability Organization</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
