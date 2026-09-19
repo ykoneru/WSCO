@@ -4,113 +4,247 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WolfPack Sustainability Organization</title>
-
+  <link rel="canonical" href="https://sfspack.org/" />
+  <link rel="preload" as="image" href="recycle.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-
 <body>
+  <a class="skip-link" href="#home">Skip to content</a>
 
-
-<header class="hero">
-  <div class="overlay">
-    <h1>WolfPack Sustainability Organization</h1>
-
+  <header class="site-header">
+    <a href="#home" class="brand">SFS</a>
     <nav aria-label="Main navigation">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="#home" data-section="home">Home</a></li>
+        <li><a href="#events" data-section="events">Events</a></li>
+        <li><a href="#game" data-section="game">Game</a></li>
       </ul>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main id="main-content">
-  <section class="intro" data-aos="fade-up">
-    <h2>Purpose</h2>
-    <p>
-      Students for Sustainability at NC State is a student-led organization dedicated to promoting environmental stewardship and community engagement on and around NC State's campus. We bring students together to clean up trash, promote recycling, and host sustainability education events that inspire awareness and action. Our members make a tangible impact while enjoying the outdoors, developing leadership skills, and connecting with like-minded peers.
-    </p>
+  <section class="hero" id="home">
+    <div class="overlay">
+      <p class="hero-kicker">Students for Sustainability · NC State</p>
+      <h1>Clean campus.<br>Build community.</h1>
+      <p class="hero-lead">Outdoor cleanups, recycling, and people who actually show up.</p>
+      <div class="hero-actions">
+        <a href="#events" class="text-link">Upcoming events</a>
+        <a href="#game" class="text-link">Play the game</a>
+      </div>
+    </div>
+    <a href="#main-content" class="scroll-cue">Scroll</a>
   </section>
 
-  <section class="impact-section">
-  <h2>What We’ve Done</h2>
-
-  <div class="impact-content">
-    <div class="impact-text">
-      <p>
-        This past semester, our organization made a measurable impact on campus
-        sustainability by collecting <strong>30.1 lbs of trash</strong> and
-        <strong>9.25 lbs of recyclable materials.
-      </p>
-
-      <p>
-        We also hosted engaging <strong>General Body Meetings</strong> featuring
-        sustainability-focused educational games and interactive activities that
-        encouraged hands-on learning.
-      </p>
-
-      <p>
-        In collaboration with the
-        <strong>Environmental Justice Club at NC State</strong>, we worked to
-        raise awareness about the environmental risks and impacts of
-        <strong>AI data centers</strong>.
-      </p>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Cleanup</span><span>Recycle</span><span>Community</span>
+      <span>Cleanup</span><span>Recycle</span><span>Community</span>
+      <span>Cleanup</span><span>Recycle</span><span>Community</span>
+      <span>Cleanup</span><span>Recycle</span><span>Community</span>
     </div>
-
-    <img
-      src="meeting.png"
-      alt="General body meeting in progress"
-      class="impact-image"
-    />
   </div>
-</section>
 
+  <main id="main-content">
+    <section class="intro" data-reveal>
+      <p class="eyebrow">Purpose</p>
+      <h2>Outdoor work, campus care, and people who show up.</h2>
+      <p>
+        Students for Sustainability at NC State is a student-led organization dedicated to promoting environmental stewardship and community engagement on and around NC State's campus. We bring students together to clean up trash, promote recycling, and host sustainability education events that inspire awareness and action. Our members make a tangible impact while enjoying the outdoors, developing leadership skills, and connecting with like-minded peers.
+      </p>
+    </section>
 
-  <section class="join" data-aos="fade-up" data-aos-delay="300">
-  <h2>Get Involved</h2>
-  <p>Follow us on Instagram, LinkedIn, or email us with any questions.</p>
+    <section class="impact-section" data-reveal>
+      <div class="impact-copy">
+        <p class="eyebrow">What we’ve done</p>
+        <h2>A semester you can weigh.</h2>
+        <div class="impact-stats" aria-label="Campus impact totals">
+          <div class="impact-stat">
+            <p class="impact-stat-number">
+              <span class="impact-stat-value" data-count="30.1" data-decimals="1">30.1</span>
+              <span class="impact-stat-unit">lbs</span>
+            </p>
+            <p class="impact-stat-label">Trash collected</p>
+          </div>
+          <div class="impact-stat">
+            <p class="impact-stat-number">
+              <span class="impact-stat-value" data-count="9.25" data-decimals="2">9.25</span>
+              <span class="impact-stat-unit">lbs</span>
+            </p>
+            <p class="impact-stat-label">Recyclables collected</p>
+          </div>
+        </div>
+        <div class="impact-text">
+          <p>
+            This past semester, our organization made a measurable impact on campus
+            sustainability by collecting <strong>30.1 lbs of trash</strong> and
+            <strong>9.25 lbs of recyclable materials</strong>.
+          </p>
+          <p>
+            We also hosted engaging <strong>General Body Meetings</strong> featuring
+            sustainability-focused educational games and interactive activities that
+            encouraged hands-on learning.
+          </p>
+          <p>
+            In collaboration with the
+            <strong>Environmental Justice Club at NC State</strong>, we worked to
+            raise awareness about the environmental risks and impacts of
+            <strong>AI data centers</strong>.
+          </p>
+        </div>
+      </div>
+      <figure class="impact-photo">
+        <img
+          src="meeting.jpg"
+          alt="General body meeting in progress"
+          class="impact-image"
+        />
+        <figcaption>General body meeting</figcaption>
+      </figure>
+    </section>
 
-  <div class="contact-icons">
-    <a href="https://www.instagram.com/sfsncsu/" target="_blank" rel="noopener">
-      <img
-        src="instagram-logo.png"
-        alt="Instagram logo linking to Students for Sustainability at NC State"
-        class="contact-icon"
-      />
-    </a>
+    <section class="join" data-reveal>
+      <p class="eyebrow">Get involved</p>
+      <h2>Show up. We’ll take it from there.</h2>
+      <p>Follow us on Instagram, LinkedIn, or join the Discord.</p>
+      <div class="contact-icons">
+        <a class="social" href="https://www.instagram.com/sfsncsu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm10 1.8H7A2.2 2.2 0 0 0 4.8 7v10A2.2 2.2 0 0 0 7 19.2h10a2.2 2.2 0 0 0 2.2-2.2V7A2.2 2.2 0 0 0 17 4.8zM12 8.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 1.6A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8zm4.55-2.95a.95.95 0 1 1-.95.95.95.95 0 0 1 .95-.95z"/></svg>
+        </a>
+        <a class="social" href="https://www.linkedin.com/company/students-for-sustainability-at-nc-state/about/?viewAsMember=true"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.5 9.5H4V20h2.5V9.5zM5.25 4A1.75 1.75 0 1 0 7 5.75 1.75 1.75 0 0 0 5.25 4zM20 20h-2.5v-5.6c0-1.86-.67-3.13-2.12-3.13A2.18 2.18 0 0 0 13.4 12.7a3.3 3.3 0 0 0-.14 1.13V20H10.8s.04-8.56 0-9.45h2.46v1.34c.33-.5 1.82-1.55 3.76-1.55C19.3 10.34 20 12.2 20 15.18V20z"/></svg>
+        </a>
+        <a class="social" href="https://discord.gg/bTbaTExTP" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.27 5.33A17.4 17.4 0 0 0 15.07 4a.07.07 0 0 0-.07.04 12.1 12.1 0 0 0-.53 1.1 16.1 16.1 0 0 0-4.84 0A8 8 0 0 0 9.1 4.04a.08.08 0 0 0-.08-.04 17.3 17.3 0 0 0-4.2 1.33.06.06 0 0 0-.03.03C2.2 9.46 1.44 13.47 1.81 17.41a.08.08 0 0 0 .03.05 17.5 17.5 0 0 0 5.28 2.67.08.08 0 0 0 .08-.03 12.5 12.5 0 0 0 1.08-1.76.07.07 0 0 0-.04-.1 11.5 11.5 0 0 1-1.65-.79.08.08 0 0 1 0-.12l.33-.26a.07.07 0 0 1 .07-.01c3.46 1.58 7.2 1.58 10.62 0a.07.07 0 0 1 .08.01l.33.26a.08.08 0 0 1 0 .12 10.8 10.8 0 0 1-1.65.79.08.08 0 0 0-.04.1 14 14 0 0 0 1.08 1.76.08.08 0 0 0 .08.03 17.4 17.4 0 0 0 5.29-2.67.08.08 0 0 0 .03-.05c.44-4.53-.74-8.5-3.13-12.05a.06.06 0 0 0-.03-.03zM8.52 14.85c-1.04 0-1.9-.96-1.9-2.13s.84-2.14 1.9-2.14 1.92.97 1.9 2.14c0 1.17-.84 2.13-1.9 2.13zm6.97 0c-1.04 0-1.9-.96-1.9-2.13s.84-2.14 1.9-2.14 1.92.97 1.9 2.14c0 1.17-.83 2.13-1.9 2.13z"/></svg>
+        </a>
+      </div>
+    </section>
 
-    <a href="https://www.linkedin.com/company/students-for-sustainability-at-nc-state/about/?viewAsMember=true"
-       target="_blank"
-       rel="noopener">
-      <img
-        src="linkedn_icon.png"
-        alt="LinkedIn logo linking to Students for Sustainability at NC State"
-        class="contact-icon"
-      />
-    </a>
+    <section id="events" class="page-section">
+      <header class="section-banner" data-reveal>
+        <p class="eyebrow">On campus</p>
+        <h2>Events</h2>
+      </header>
 
-    <a href="mailto:ncsusfs6@gmail.com">
-      <img
-        src="email-icon.png"
-        alt="Email icon linking to Students for Sustainability at NC State email"
-        class="contact-icon"
-      />
-    </a>
-  </div>
-</section>
+      <section class="calendar" data-reveal>
+        <h3>Upcoming</h3>
+        <div id="next-event-countdown" class="countdown-banner" hidden></div>
+        <div id="upcoming-events">
+          <p>Our first cleanup event of the new semester is scheduled for mid to late January.</p>
+        </div>
+      </section>
 
-</main>
+      <section class="past-events-section" data-reveal>
+        <h3>Past cleanups</h3>
+        <div id="past-events">
+          <div class="past-event-item">
+            <div class="past-events-text">
+              <p>Volunteer Cleanup at The Beaver Creek on Sullivan St. on November 9th, 2025!</p>
+            </div>
+            <div class="past-events-image-wrapper">
+              <img src="pastevent.jpg" alt="Volunteer cleanup at Beaver Creek" class="past-events-image" loading="lazy" />
+            </div>
+          </div>
+          <div class="past-event-item">
+            <div class="past-events-text">
+              <p>Volunteer Cleanup in a forest area on Centennial Campus on October 5th, 2025!</p>
+            </div>
+            <div class="past-events-image-wrapper">
+              <img src="pastevent2.jpg" alt="Volunteer cleanup on Centennial Campus" class="past-events-image" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-<footer data-aos="fade-in" data-aos-delay="400">
-  <p>&copy; 2025 WolfPack Sustainability Organization</p>
-</footer>
+      <section class="campus-conditions" aria-labelledby="conditions-heading" data-reveal>
+        <p class="eyebrow">Live data</p>
+        <h3 id="conditions-heading">Campus conditions</h3>
+        <p class="conditions-sub">Live weather and air quality for NC State, so you can plan for outdoor cleanups.</p>
+        <div id="campus-conditions" class="conditions-panel">
+          <p class="conditions-status">Loading campus weather…</p>
+        </div>
+      </section>
+    </section>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <section id="game" class="page-section">
+      <header class="section-banner" data-reveal>
+        <p class="eyebrow">Play</p>
+        <h2>The game</h2>
+      </header>
+      <p class="game-intro" data-reveal>
+        Eco Catch. Move to grab food and recycling. Let the trash hit the ground.
+      </p>
+      <p class="game-keys" data-reveal>Arrow keys or A/D to move · Space to play · Drag on mobile</p>
 
+      <div class="eco-catch" data-reveal>
+        <div class="eco-stage">
+          <canvas id="eco-canvas" width="400" height="640" aria-label="Eco Catch game"></canvas>
+          <div id="eco-hud" class="eco-hud" hidden>
+            <div class="eco-lives" id="eco-lives" aria-label="Lives">
+              <i></i><i></i><i></i>
+            </div>
+            <p class="eco-score" id="eco-live-score">0</p>
+            <p class="eco-combo" id="eco-combo"></p>
+          </div>
+          <div id="eco-overlay" class="eco-overlay">
+            <div class="eco-panel" id="eco-view-ready">
+              <h3>Eco Catch</h3>
+              <p class="eco-lede">Catch food and recycling. Skip the trash.</p>
+              <div class="eco-rules">
+                <p class="catch">Catch</p>
+                <div class="eco-rules-row" id="eco-rules-good"></div>
+                <p class="skip">Skip</p>
+                <div class="eco-rules-row" id="eco-rules-bad"></div>
+              </div>
+              <div class="eco-actions">
+                <button type="button" id="eco-play">Play</button>
+                <button type="button" id="eco-board" class="ghost">Scores</button>
+              </div>
+            </div>
+
+            <div class="eco-panel" id="eco-view-over" hidden>
+              <p class="eco-score-lg" id="eco-final-score">0</p>
+              <p class="eco-best">Best <strong id="eco-best-score">0</strong></p>
+              <p class="eco-fact" id="eco-fact"></p>
+              <form id="eco-save-form" class="eco-save-form" hidden>
+                <div class="eco-save-row">
+                  <input id="eco-player-name" name="playerName" maxlength="14" autocomplete="nickname" placeholder="Name" aria-label="Name" />
+                  <button type="submit" id="eco-save">Save</button>
+                </div>
+              </form>
+              <p class="eco-saved-note" id="eco-saved-note" hidden>Saved</p>
+              <div class="eco-actions">
+                <button type="button" id="eco-again">Replay</button>
+                <button type="button" id="eco-over-board" class="ghost">Scores</button>
+              </div>
+            </div>
+
+            <div class="eco-panel" id="eco-view-board" hidden>
+              <h3>Scores</h3>
+              <ol class="eco-board" id="eco-board-list"></ol>
+              <p class="eco-board-empty" id="eco-board-empty" hidden>No scores yet.</p>
+              <div class="eco-actions">
+                <button type="button" id="eco-board-play">Play</button>
+                <button type="button" id="eco-board-back" class="ghost">Back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WolfPack Sustainability Organization</p>
+  </footer>
+
+  <script src="events-data.js"></script>
+  <script src="script.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
