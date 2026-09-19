@@ -375,8 +375,7 @@
             '<p class="condition-meta">' + (pm25 ? 'PM2.5 ' + escapeHtml(pm25) + ' µg/m³' : 'PM2.5 unavailable') + '</p>' +
           '</div>' +
         '</div>' +
-        '<p class="conditions-tip">' + escapeHtml(cleanupTip(code, rainChance, aqiValue || 0)) + '</p>' +
-        '<p class="conditions-source">Campus area data from <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a></p>';
+        '<p class="conditions-tip">' + escapeHtml(cleanupTip(code, rainChance, aqiValue || 0)) + '</p>';
     }).catch(function () {
       root.innerHTML = '<p class="conditions-status">Live campus conditions are unavailable right now. Check back before the next cleanup.</p>';
     });

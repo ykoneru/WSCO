@@ -594,16 +594,6 @@ main {
   color: var(--green);
 }
 
-.conditions-source {
-  font-size: 0.82rem;
-  color: var(--muted);
-}
-
-.conditions-source a {
-  text-decoration: none;
-  border-bottom: 1px dashed currentColor;
-}
-
 .countdown-banner {
   background: var(--ink);
   color: var(--cream);
